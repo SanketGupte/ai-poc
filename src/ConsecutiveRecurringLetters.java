@@ -1,4 +1,4 @@
-public class Main {
+public class ConsecutiveRecurringLetters {
     public static void main(String[] args) {
 //        System.out.println("Hello, World!");
         String s = "Hello Na Puuublic";
