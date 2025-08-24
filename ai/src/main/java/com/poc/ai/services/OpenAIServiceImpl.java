@@ -1,12 +1,7 @@
 package com.poc.ai.services;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.poc.ai.model.Answer;
-import com.poc.ai.model.GetCapitalRequest;
-import com.poc.ai.model.GetCapitalResponse;
-import com.poc.ai.model.Questions;
+import com.poc.ai.model.*;
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.prompt.Prompt;
@@ -35,16 +30,22 @@ public class OpenAIServiceImpl implements OpenAIService{
     @Value("classpath:templates/get-capital-with-info.st")
     private Resource getCapitalWithInfoPrompt;
 
-    @Autowired
-    ObjectMapper objectMapper;
+//    @Autowired
+//    ObjectMapper objectMapper;
 
     @Override
-    public Answer getCapitalWithInfo(GetCapitalRequest request){
+    public GetCapitalWithInfoResponse getCapitalWithInfo(GetCapitalRequest request){
+
+        BeanOutputConverter<GetCapitalWithInfoResponse> converter = new BeanOutputConverter<>(GetCapitalWithInfoResponse.class);
+        String format = converter.getFormat();
+
         PromptTemplate promptTemplate = new PromptTemplate(getCapitalWithInfoPrompt);
-        Prompt prompt = promptTemplate.create(Map.of("stateOrCountry", request.stateOrCountry()));
+        Prompt prompt = promptTemplate.create(Map.of("stateOrCountry", request.stateOrCountry(),
+                "format", format));
+
         ChatResponse response = chatModel.call(prompt);
 
-        return new Answer(response.getResult().getOutput().getText());
+        return converter.convert(Objects.requireNonNull(response.getResult().getOutput().getText()));
     }
 
     @Override

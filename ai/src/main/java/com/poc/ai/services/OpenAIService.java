@@ -1,13 +1,10 @@
 package com.poc.ai.services;
 
-import com.poc.ai.model.Answer;
-import com.poc.ai.model.GetCapitalRequest;
-import com.poc.ai.model.GetCapitalResponse;
-import com.poc.ai.model.Questions;
+import com.poc.ai.model.*;
 
 public interface OpenAIService{
 
-    Answer getCapitalWithInfo(GetCapitalRequest request);
+    GetCapitalWithInfoResponse getCapitalWithInfo(GetCapitalRequest request);
 
     GetCapitalResponse getCapital(GetCapitalRequest request);
 

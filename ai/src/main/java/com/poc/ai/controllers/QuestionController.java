@@ -1,10 +1,7 @@
 package com.poc.ai.controllers;
 
 
-import com.poc.ai.model.Answer;
-import com.poc.ai.model.GetCapitalRequest;
-import com.poc.ai.model.GetCapitalResponse;
-import com.poc.ai.model.Questions;
+import com.poc.ai.model.*;
 import com.poc.ai.services.OpenAIService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,8 +17,8 @@ public class QuestionController {
     }
 
     @PostMapping("/capitalWithInfo")
-    public Answer getCapitalWithInfo(@RequestBody GetCapitalRequest request){
-        return openAIService.getCapitalWithInfo(request);
+    public GetCapitalWithInfoResponse getCapitalWithInfo(@RequestBody GetCapitalRequest request){
+        return this.openAIService.getCapitalWithInfo(request);
     }
 
     @PostMapping("/capital")
