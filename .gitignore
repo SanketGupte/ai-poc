@@ -1,0 +1,12 @@
+/ai/target/classes/com/poc/ai/model/Answer.class
+/api-response-analyzer
+/ai/target/classes/com/poc/ai/model/GetCapitalRequest.class
+/ai/target/classes/com/poc/ai/model/GetCapitalResponse.class
+/ai/target/classes/com/poc/ai/model/GetCapitalWithInfoResponse.class
+/ai/target/classes/com/poc/ai/services/OpenAIService.class
+/ai/target/classes/com/poc/ai/services/OpenAIServiceImpl.class
+/ai/target/classes/com/poc/ai/controllers/QuestionController.class
+/ai/target/classes/com/poc/ai/model/Questions.class
+/ai/target/classes/com/poc/ai/SpringAiApplication.class
+/ai/target/classes/com/poc/ai/config/VectorStoreConfig.class
+/ai/target/classes/com/poc/ai/config/VectorStoreProperties.class
