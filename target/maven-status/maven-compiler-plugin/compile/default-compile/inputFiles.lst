@@ -1,0 +1,13 @@
+C:\Users\Sanket's Laptop\Java_Workspace\ai-poc\src\main\java\com\poc\ai\config\VectorStoreConfig.java
+C:\Users\Sanket's Laptop\Java_Workspace\ai-poc\src\main\java\com\poc\ai\config\VectorStoreProperties.java
+C:\Users\Sanket's Laptop\Java_Workspace\ai-poc\src\main\java\com\poc\ai\controllers\QuestionController.java
+C:\Users\Sanket's Laptop\Java_Workspace\ai-poc\src\main\java\com\poc\ai\model\Answer.java
+C:\Users\Sanket's Laptop\Java_Workspace\ai-poc\src\main\java\com\poc\ai\model\GetCapitalRequest.java
+C:\Users\Sanket's Laptop\Java_Workspace\ai-poc\src\main\java\com\poc\ai\model\GetCapitalResponse.java
+C:\Users\Sanket's Laptop\Java_Workspace\ai-poc\src\main\java\com\poc\ai\model\GetCapitalWithInfoResponse.java
+C:\Users\Sanket's Laptop\Java_Workspace\ai-poc\src\main\java\com\poc\ai\model\Questions.java
+C:\Users\Sanket's Laptop\Java_Workspace\ai-poc\src\main\java\com\poc\ai\properties\VectorStoreConfig.java
+C:\Users\Sanket's Laptop\Java_Workspace\ai-poc\src\main\java\com\poc\ai\properties\VectorStoreProperties.java
+C:\Users\Sanket's Laptop\Java_Workspace\ai-poc\src\main\java\com\poc\ai\services\OpenAIService.java
+C:\Users\Sanket's Laptop\Java_Workspace\ai-poc\src\main\java\com\poc\ai\services\OpenAIServiceImpl.java
+C:\Users\Sanket's Laptop\Java_Workspace\ai-poc\src\main\java\com\poc\ai\SpringAiApplication.java
