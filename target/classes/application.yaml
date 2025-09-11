@@ -5,11 +5,12 @@ spring:
   ai:
     openai:
       api-key: ${OPENAI_API_KEY}
+      embedding-model: text-embedding-3-small
 
 com:
   poc:
     ai:
       properties:
-        vectorStorePath: /resources/vectorStore.json
+        vectorStorePath: C:/resources/vectorStore.json
         documentsToLoad:
-          - classpath:/movies500.csv
+          - classpath:/movies500Trimmed.csv
